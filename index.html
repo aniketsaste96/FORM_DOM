@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <h1 id="title">Fill the Form</h1>
+    <p id="description">Form validation task</p>
+    <div class="container">
+
+
+
+        <form id="form">
+            <div class="form-group">
+                <label> First Name:<input type="text" name="" id="first-name" placeholder="First Name" required></label>
+                <br>
+                <label> Last Name:</label>
+                <input type="text" name="" id="last-name" placeholder="Last Name" required>
+                <br>
+                <label>PIN Code :</label>
+                <input type="text" name="" id="pincode" placeholder="Enter PIN" required>
+                <br>
+                <label for=""> Address:</label>
+                <textarea name="" id="address" cols="20" rows="2" placeholder="Enter Address" required></textarea>
+                <br>
+                <label>Gender</label>
+                <input type="radio" name="gender" id="male" value="Male">Male
+                <input type="radio" name="gender" id="female" value="Female">Female
+                <br>
+                <label> Choice of Food(Choose at least two):</label>
+                <div name="foods">
+                    <label for=""><input type="checkbox" name="food" value="Omlet" class="chk">Omlet</label>
+                    <label for=""><input type="checkbox" name="food" value="Idali" class="chk">Idali</label>
+                    <label for=""><input type="checkbox" name="food" value="Uthapa" class="chk">Uthapa</label>
+                    <label for=""><input type="checkbox" name="food" value="Chicken" class="chk">Chicken</label>
+                    <label for=""><input type="checkbox" name="food" value="Dosa" class="chk">Dosa</label>
+                </div>
+
+                <br>
+                <label>State:</label>
+                <input type="text" name="" id="state">
+                <br>
+                <label>Country:</label>
+                <input type="text" name="" id="country">
+                <div>
+                    <button type="button" id="submit" value="submit" class="btn btn-primary"
+                        onclick="mysubmit()">Submit</button>
+                    <button type="button" value="reset" class="btn btn-primary" onclick="myreset()">Reset</button>
+                </div>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+    </table>
+
+
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+
+
+</html>
